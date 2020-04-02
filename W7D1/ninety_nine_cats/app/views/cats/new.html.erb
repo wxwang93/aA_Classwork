@@ -1,0 +1,15 @@
+<h1>Create new cat!</h1>
+
+<form action="<%=cats_url%>" method="post">
+    <label>Name: <input type="text" name="cat[name]"></label>
+    <label>Birthday: <input type="date" name="cat[birth_date]"></label>
+    <label>Description: <input type="textarea" name="cat[description]"></label>
+    <label for="color">Color: </label>
+    <select id="color" name="cat[color]">
+        <option disabled selected>-- select a color --</option>
+        <%@cat.all_colors.each do |color|%>
+        <option value="<%= color.downcase %>"><%= color.capitalize %></option>
+        <%end %>
+    </select>
+
+</form>
