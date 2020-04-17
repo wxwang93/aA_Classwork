@@ -8,6 +8,7 @@ describe("Piece", function () {
       lightPiece;
 
   beforeEach(function () {
+    //debugger;
     darkPiece = new Piece("black");
     lightPiece = new Piece("white");
   });
@@ -29,6 +30,7 @@ describe("Piece", function () {
 
   describe('#toString', function () {
     it('should return a letter representing the color', function() {
+      // debugger;
       assert.equal(lightPiece.toString(), 'W');
       assert.equal(darkPiece.toString(), 'B');
     });

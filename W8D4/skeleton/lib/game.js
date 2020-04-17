@@ -6,6 +6,7 @@ const Board = require("./board.js");
  * Sets up the game with a board and the first player to play a turn.
  */
 function Game () {
+  // debugger;
   this.board = new Board();
   this.turn = "black";
 };
