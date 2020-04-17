@@ -1,0 +1,20 @@
+1. Git status
+ 	-checks what has changed
+
+2. Git diff <filename> (. For all)
+	-shows differences
+
+3. Git add <filename> (. For all)
+	-stages 
+	-git status to confirm
+
+4. Git commit -m "message"
+	-moves from stage to committed
+	-makes commit in git history
+
+5. Git log
+	-view commits
+
+6. Git push origin master
+	-pushes to remote repository in GitHub
+	-on collaborative projects, push to your branch
