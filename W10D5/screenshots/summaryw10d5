@@ -1,0 +1,1 @@
+componentDidMount -> thunk -> requests data from DB -> (if ok) store state populates with data -> do render because state is updated.

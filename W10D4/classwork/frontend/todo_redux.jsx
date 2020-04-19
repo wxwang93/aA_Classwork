@@ -9,10 +9,13 @@ import {allToDos} from './reducers/selectors'
 document.addEventListener("DOMContentLoaded", ()=> {
     const root = document.getElementById('root');
     const store = configureStore();
+
+    // below is for testing only
     window.store = store;
     window.receiveToDo = receiveToDo;
     window.receiveToDos = receiveToDos;
     window.allToDos = allToDos;
+    // /end testing
 
     ReactDOM.render(<Root store={store} />, root)
 })
