@@ -7,7 +7,7 @@ class Api::SessionsController < ApplicationController
             params[:user][:password])
         if @user
             log_in(@user)
-            render :show
+            render "api/users/show"
         else
           flash.now[:errors] = @users.errors.full_messages
           render :new
@@ -18,7 +18,7 @@ class Api::SessionsController < ApplicationController
         @user = current_user
         if @user
             log_out
-            render {}
+            render "api/users/show"
         else
             render json: ["Nobody signed in"], status: 404
         end
